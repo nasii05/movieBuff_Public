@@ -1,0 +1,13 @@
+<p class="text-center text-white text-xl md:text-3xl bg-black pb-2">Trending Movies</p>
+<div class="w-screen overflow-auto h-fit bg-black  ">
+  <div class="w-full h-full  flex gap-6">
+    <div  *ngFor="let item of film ">
+      <div class="w-64 h-full bg-red-800 flex flex-col">
+        <img src="{{posterLink}}/{{item?.poster_path}}" alt="">
+        <div class="text-white">
+          <p>{{item?.title}}{{item?.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+
+<div class="w-screen overflow-auto h-fit bg-fuchsia-700  ">
+  <div class="w-full h-full bg-emerald-800 flex gap-6">
+    <div  *ngFor="let item of upcoming ">
+      <div class="w-64 h-full bg-red-800 flex flex-col">
+        <img src="{{posterLink}}/{{item?.poster_path}}" alt="">
+        <div class="text-white">
+          <p>{{item?.title}}{{item?.name}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+
+<h1 class="relative top-5 md:top-5 text-center text-slate-50 text-4xl
+font-popins font-bold">New releases</h1>
+
+
+<owl-carousel-o [options]="options">
+  <ng-template carouselSlide *ngFor="let poplar of poplar; index as i"
+  >
+  <div class="flex bg-gradient-to-br from-gray-600 to-slate-500 items-center h-[40rem]
+  justify-center relative mt-10 md:mt-10">
+    <div class="font-popins text-white w-80 md:w-full">
+      <img class=" md:w-full h-[28rem] border-2 border-white rounded-md"
+      [src]="'https://image.tmdb.org/t/p/original' + poplar.backdrop_path"
+      alt=""
+    />
+
+    <div class="flex flex-col relative items-center">
+      <p class="text-center">Title</p>
+      <hr class="md:invisible">
+      <h1 class="text-xl
+      md:text-xl text-center">{{ poplar.original_title }}</h1>
+      <h1 class="text-sm
+      md:text-xl text-center"> release date : {{ poplar.release_date }}</h1>
+      <div class="md:w-[60%]">
+        <p class="text-center text-sm mt-2">{{ poplar.overview}}</p>
+      </div>
+      <hr class="mt-2 md:invisible">
+      <p class="text-center text-xl">{{ poplar.revenue }}</p>
+      <p class="text-center"> Rating : {{poplar.vote_average | number:'1.0-0'}}</p>
+    </div>
+
+    </div>
+  </div>
+  </ng-template>
+</owl-carousel-o>

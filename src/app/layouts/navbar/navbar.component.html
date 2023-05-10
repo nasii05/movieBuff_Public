@@ -1,0 +1,36 @@
+
+<div class="w-[100%] h-20 bg-slate-500 flex flex-row  items-center relative">
+  <h1 class="relative left-5 text-xl font-popins
+  text-slate-50">
+  MovieBuff
+  </h1>
+
+   <a class="absolute right-4 md:hidden">
+    <svg class="w-10 h-10 hover:cursor-pointer stroke-[#ffffff] active:stroke-black" (click)="toggle()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+     </svg>
+   </a>
+
+   <div class="invisible md:visible text-white w-96 h-16 absolute right-6
+    flex items-center justify-center">
+      <ul class="flex items-center justify-center gap-4">
+        <li class="hover:text-black hover:cursor-pointer"><a routerLink="latest">Latest</a></li>
+        <li class="hover:text-black hover:cursor-pointer"><a routerLink="now-playing">Now Playing</a></li>
+        <li class="hover:text-black hover:cursor-pointer"><a routerLink="top-rated">Top Rated</a></li>
+        <li class="hover:text-black hover:cursor-pointer"><a routerLink="upcoming">Upcoming</a></li>
+      </ul>
+   </div>
+</div>
+
+<div *ngIf="isShow" class="inset-0 bg-black/50 " (click)="toggle()">
+  <div class="bg-slate-200 text-black w-full h-32  top-0 md:hidden">
+    <div class="relative right-3 flex flex-col text-gray-500 items-center justify-center">
+      <div class="flex flex-col mt-3">
+        <button class="cursor-pointer hover:text-black" routerLink="/latest">Latest</button>
+        <button class="cursor-pointer hover:text-black" routerLink="/now-playing">Now Playing</button>
+        <button class="cursor-pointer hover:text-black" routerLink="/top-rated">Top Rated</button>
+        <button class="cursor-pointer hover:text-black" routerLink="/upcoming">Upcoming</button>
+      </div>
+    </div>
+  </div>
+</div>
