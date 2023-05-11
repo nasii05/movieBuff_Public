@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "moviebuff-3de0a": {
+      "hosting": {
+        "netflix_carousel": [
+          "moviebuff-web-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "moviebuff-3de0a"
+  }
+}

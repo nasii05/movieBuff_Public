@@ -93,6 +93,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "netflix_carousel:build:production",
+            "firebaseProject": "moviebuff-3de0a",
+            "firebaseHostingSite": "moviebuff-web-app"
+          }
         }
       }
     }
