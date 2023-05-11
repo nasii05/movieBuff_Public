@@ -20,9 +20,9 @@ export class PopularComponent {
     this.films.popular().subscribe(
       value => {
         this.poplar = value
-        console.log(this.poplar);
       }
     )
   }
+
 
 }

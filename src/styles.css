@@ -7,8 +7,12 @@
 
 
  ::-webkit-scrollbar {
-     width: 4px;
+     width: 1px;
    }
+
+::-webkit-scrollbar:horizontal{
+  display: none;
+}
 
    /* ::-webkit-scrollbar-track { */
      /* -webkit-box-shadow: inset 0 0 6px rgb(225, 33, 33); */
