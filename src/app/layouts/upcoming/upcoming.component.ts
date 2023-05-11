@@ -20,7 +20,7 @@ export class UpcomingComponent {
     this.films.upcoming().subscribe(
       value => {
         this.upcoming = value
-        console.log(this.upcoming);
+        // console.log(this.upcoming);
       }
     )
   }

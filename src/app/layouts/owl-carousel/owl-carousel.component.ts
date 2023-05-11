@@ -45,7 +45,7 @@ export class OwlCarouselComponent {
       .get(popular)
       .pipe(map((res: any) => res['results']))
       .subscribe((moveis) => {this.poplar = moveis
-        console.log(this.poplar);
+        // console.log(this.poplar);
       });
   }
 }
