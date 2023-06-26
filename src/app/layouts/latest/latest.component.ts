@@ -25,9 +25,12 @@ export class LatestComponent {
     this.films.trending().subscribe(
       value => {
         this.film = value
-        // console.log(this.film);
+        console.log(this.film);
       }
     )
   }
+
+  cart = this.films
+
 
 }

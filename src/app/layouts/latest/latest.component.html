@@ -1,12 +1,18 @@
 <p class="text-center font-popins text-white text-xl
 md:text-3xl bg-gray-900 pb-2">Trending Movies</p>
 <div class="w-screen overflow-auto h-fit  bg-gray-900">
-  <div class="w-full h-full bg-gray-900 flex gap-6">
-    <div  *ngFor="let item of film ">
-      <div class="w-64 h-full flex flex-col">
-        <img src="{{posterLink}}/{{item?.poster_path}}" alt="">
+  <div class="w-full h-max  flex gap-6">
+    <div class=""  *ngFor="let item of film ">
+      <div class="w-64 h-full flex flex-col hover:bg-blend-darken">
+        <img
+         class="border-2 border-white rounded-md "
+         src="{{posterLink}}/{{item?.poster_path}}" alt=""
+       >
         <div class="text-white text-center">
-          <p>{{item?.title}}{{item?.name}}</p>
+          <p class="font-popins font-extrabold text-xl md:text-2xl bg-clip-text bg-gradient-to-r
+          from-white via-red-500 to-blue-500 text-transparent" >
+            {{item?.title}}{{item?.name}}
+          </p>
         </div>
       </div>
     </div>
